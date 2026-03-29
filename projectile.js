@@ -22,15 +22,3 @@ function key_released() {
     shots.add(shot);
   }
 }
-
-function draw() {
-  /*drawing two panels of background*/
-  image(street_image, streetX, 0)
-  image(street_image, streetX + street_image.width, 0)
-  /*positionX of background decreases*/
-  streetX --;
-  /*if the first panel goes offscreen left, it is reset*/
-  if (streetX < -width) {
-    mountainsX = 0
-  }
-}
